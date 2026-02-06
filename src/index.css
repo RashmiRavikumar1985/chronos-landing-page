@@ -128,6 +128,15 @@
     @apply hover:shadow-[0_0_40px_rgba(0,212,255,0.15)];
   }
 
+  .feature-card-highlighted {
+    @apply relative p-8 rounded-2xl transition-all duration-500;
+    @apply bg-gradient-to-br from-card/60 via-card/40 to-card/60;
+    @apply backdrop-blur-xl border border-accent/10;
+    @apply hover:border-accent/50 hover:bg-card/70;
+    @apply hover:shadow-[0_0_60px_rgba(0,212,255,0.25),inset_0_1px_0_rgba(255,255,255,0.1)];
+    @apply hover:-translate-y-1;
+  }
+
   .section-title {
     font-family: 'Orbitron', sans-serif;
     @apply text-4xl md:text-5xl font-bold tracking-wider;
